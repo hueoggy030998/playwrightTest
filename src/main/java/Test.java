@@ -23,6 +23,7 @@ public class Test {
             // Expect a title "to contain" a substring.
             assertThat(page).hasTitle(Pattern.compile("Playwright"));
 
+            // test
             // Stop tracing and export it into a zip archive.
             context.tracing().stop(new Tracing.StopOptions()
                     .setPath(Paths.get("trace.zip")));
